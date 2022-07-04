@@ -24,6 +24,7 @@ const designList = document.querySelector(".designLeft>.coverLeft>.listArea");
 let chk =true;
 
 function designOpen(){
+  
   if(chk === true){
     publishing.style.transform= "translateX(3000px)";
     plan.style.transform= "translate(3000px)";
@@ -36,11 +37,12 @@ function designOpen(){
     designPaper.style.zIndex = "2000";
 
     designLock.style.transformOrigin = "100% 0";
-    designLock.style.transform = "rotateY(90deg)" 
-    
+    designLock.style.transform = "rotateY(90deg)"
+    designList.style.display = "block";
+
     chk = false;
   }
-  else{
+  /* else{
     publishing.style.transform = "translateX(-25%)";
     plan.style.transform = "translateX(-25%)";
     profile.style.transform= "translateX(-25%)";
@@ -54,10 +56,12 @@ function designOpen(){
     designLock.style.transformOrigin = "100% 0";
     designLock.style.transform = "rotateY(0deg)"
     designList.style.display = "none"; 
-
+    
     chk = true;
-  }
+  } */
 }
+
+
 
 function publishingOpen(){
   if(chk === true){
